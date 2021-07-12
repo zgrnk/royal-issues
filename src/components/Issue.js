@@ -26,8 +26,8 @@ const defaultData = {
 }
 
 export default function Issue ({data = defaultData}) {
-  const workers = data.assignees && data.assignees.length > 0 ? data.assignees : [];
-  const labels = data.labels && data.assignees.length > 0 ? data.labels : [];
+  const workers = data.assignees && data.assignees.length > 0 ? data.assignees : null;
+  const labels = data.labels && data.assignees.length > 0 ? data.labels : null;
 
   return (
     <div className="m-12 flex flex-col bg-blue-300 rounded-lg overflow-hidden max-w-md w-1/2">
